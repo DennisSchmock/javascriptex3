@@ -11,16 +11,11 @@ $(document).ready(function () {
         $(this).css("border", "solid black 4px");
     });
     $("#d3").on("click", function () {
-        $(this).css("font-size", "200px");
+        $(this).css("font-size", "20px");
     });
 
 
-    $("div").on("click", function (event) {
-        var test = event.target.valueOf();
-        var value = $(test).text();
-        $(test).text(2*value);
-        
-    });
+    
 
 });
 

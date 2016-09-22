@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script src="js/task4.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div class="row col-sm-4">
+
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <img class="img-circle" style="width: 150px;height: 150" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhIVFRUXFRcVFxUYFRcXFRUVFxUXFxcXFRcYHSggGBolHRcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGBAQGisfHh0tLS0tLSsrLS0uLS0tLS0tKysrLS0tLS0tLS4tKy0tLS0tLS0tLS0tLS0tLS4tLS0rN//AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAACAAEDBAUGBwj/xABBEAABBAADBQQHBQUIAwEAAAABAAIDEQQSIQUxQVFhBnGBkQcTIjKhscFCUtHh8DNicpKiFCNjgrKzwvE1Q3M0/8QAGwEBAQADAQEBAAAAAAAAAAAAAAECAwQFBgf/xAAqEQEBAAICAQIEBgMBAAAAAAAAAQIRAyExBBIFIkFRBhMyYXHBgZGxM//aAAwDAQACEQMRAD8A4onCRTLIStViJVmqzEsKLcaNRMUqihKSRSRSUcqkKCREUnhAVJIoyskMpI1Y2ds58xpvOj5fLcLOgsc10Ds/2dhgbbw18hFEn3Rxqjd9/RauXlxwnbbx8WWfhpuAwEsxqOK63kWAK5kneszhexmId90dCfyW94HDfdArvrwWw4XCEbwKXJfU5Xw68fS4yd1zvA+j6/2j65gNPzPHqrbfRa5xpk/8woj8T5LpkMPRTMhynRMeXPe7TLh49akc9j9FENZXzuB5iJzj4U4AcOfxWpdp/RtiMM10kTxPG3f7BZI1vMtNg94K7/CdP1ap7RYS0gg9/wCNBbpyZTtp/LxvTynIwg0QQUwW8dq9iNjMgHtN9pzObCwFzmk76ygiuZB4a6ZNFlrk5ocD01GvUEEeC6Mc5lHPljcaeNWGqvGrDFaxOmKIplFMkUgkgYqMqQoEQyJDSMKgXKFyncoHpAKSSSoiKSRSCoNpU8ZUDVPGsaLkalUMSmCihISATkJBANIXhSIHoKUm9Ph4S5wAF2UpVmNixNa0SEW43l6CyPOwf1umWXtm1xx3WwbIwzYW0KzHUmlsez256qv+lq/rS2vP9eS2nYGJYdQavfpuNaGuXCu5ebnu916XH11Gy4TDChw59Cslh5MtXyo/j8FQY4DjoRru18fqrjRoDfisJG6rrMQL6FWr4rGNHUdx3/BTGWhv8LH6K2TJhcN+Fl0pHuphjXnShfiqjMXel/r8EeEcc2+/BZTLfhMuPU7jCdvNmCSIvIDXBtXzGmjjwFgC+RK4TtTDZHBpeNAdQHEG3FxogVQJIXoLtTKXwSsaPaykgcy3WvguAbTrMdQQ72gAbr8N3yXTxXuuLmx1qqYaOBvr+RUrFDHW8HwI+vFThdDnEmTpKBkikkgEoCEZQFEJEEKIKhFQPU5UD0AeKdNSSojcmCdyYLIG1TRqBqmjWNFyJWAq8SsNWKmKYIiEyBkMiNC9BSkOqyezpDVa9Og4ALGTLJ7GizDzPRYcn6WfF+pls2bxrTyv8uizmzLbqNDwWKwWGtwC2TCQAfbA6ELizepwSeaymD2hlGu7xV1u3Wt1B+AHlxKpxwAjeD3FB/ZLOugWqSuu441lYtqF+6NtniT147lbZiCB7zL5VoPALXcY/wBWCAaUWGikvMXP11ytaSe/TVZTGtd1vptL9aNV1G7vrgpcBPlfR38+BWP2djW+5evUUb6qzM2j9fwUny3ZZ7p7aj27Pklo8RYPSr/XcuS+kLZ7YZI3MblErC6uAyurTj9oLsGJaHuic4AgNcDfCuPz8+SpdsOy8WMgIecr4mnK8AW1xI013igARyHPVb+K6z24ubHeGvq4A1WGKswqwxdzzUqZOmKimSTpkQxQlGUBCAUQTJwqEVC9TqJ4QRJJJKiJyZE5CqCCmjUAUzFKLkSstVSJWmLFYcpkRCFAxTORJigpzBZjYMlMPU14b1iZlY2XLVjqsc/DLjvzNqwDhRI3g71di2cXEZnk3ua0Cx3rC7JeQXdT+vqtpwmBcWhzJAwkamszq5DkuW9V6XH3COFlhFtdf7rtD4HcVf2PK6canLl0Nj9c1RwXZ4NkdJLipX5vdYXmhfIWbWegyiQBoAFAaULrieZWOcjo4dsTjdnSicUC8AZhy05+e5SYs7Rys/sxjjJd7WfLnAse0bvfrp8eA2iWNuh6If7O52gdlHKr+qS6MsdxNgNkh1PfMXyaWaANjlQHXUhT4+Aiid6PCFseg8SeKmxbw8UFjl3GOO5f2UXuDaLhY3gdTp+ao9qdpluEmfG3M31ThloNNk5czid15vmsjjsPcZBF2MtbtSdPitf7R7Ndh9nYwyGy6J3UanK3XnZGiuPlM5j7ba4hiWU7UZeOW7IHCzx0o+KdigB/Xep2L0HipUk4SUUySSSIYoSjKEoASSKcIHCjepEEiCBJOUyojchRuQLIEFKxQhSsUFqJW2KpGVaYsVSIUSEoEUydJBVnCigfR0U06qFBsuyJc2o8RxBW57MnDmgHhoVz/spi8mIbdEO9mjuvh+uq26MFkjsvAnTmL/6XLy46r0/S5SzbbMM2NuoGvPf/ANKPBS/3hsgNBH5rHNxHs2qWJ2fO5rXxSZX6kg7nA7hS55e+3oXUm43uXF4dzC18gA4ndV8rWPwmOyOLM4eBoHj7QoHXkaIsLT9n9mMTiJAMTowGxR3nwJ16nqt3m2CyBlRgBpOa7J1rissvDXhZLq/UZmJV/BPoLD4V1mj3LKRCiOS1ys89aWMdiiGE7qynTU1mF/Vat6R8Y52z5GNJy5mOOb2byva7y3HrS2dsgzd4PyWidr+1mDlhxMLXkvABaRQtwIvITy4rbx7uXTj9RlMcdORuaQSDvBIPeFNGoLN2eamjXoPIWAkUmpFRTJ0k6BigKMoSEQCYJ0ggdA9GELwggISTkJlQD1GpHhRrKAgpGKIKVigswq3GVTiVqNY1YmQokJQJOUydBXmCpuCvThUXJEC0kEEaEajoVu2xdqet9oinbjyOg1C0lZPYE+WQtv3hp3jX5WsOXHeLf6fk9uWvu6RFDY0TbT2uIIy+tQNBzpRbLxwIGuquzAH2gxriNRdX/lvcV58nzdval3OmsRbZxeJHsNnfZ+wwhv8APuHmtl7OYvaAD454nFoIADnNzgEAg3dUlh9tQRtyev8AVtb9jLTgeIrhuT4Hafr3D1Wb1bTZcRrI7l3cfABb8rjrwwxwu+8tszE/WzYPIq+MVY0OqoSQucMx0UcLQ06m1zabaymDluQA8bvuped5veNbrNd1r0TsKLPiWAa8TyA4rmvpQ7FnD4qR+HYcjv7zIBuDrOZo5XmFDlfFdvpcerXl+uy3lI56FNGoQpWLprgWGoihaiUDUnSTFFIoCiQlECUycpggJM5Ok5BAQknKSoikUZUsiiKsCCkao0bVRYiVyNU4lajWNFhCiCEqMiTgJgnCIimVF4V+UKn6ok6An5eJVhUJRwXmBbvGvkrLMD9410COSgMrRXPmVdI2TY2La+nEkA6Ho4LbMBimE5D7w/qHMKj2V2GJNnstuuZ7rHvUXH2h5eSp4zByR79QPde3fa4+Xienweo6bScLATmfGxx4FzQSe61fZjGgUANOGlD8Fo+H2hLVb/L8U5xjhq80O/6Detcwrs/NlbVjNpBwpprWr+aghffcPMrD4LGMJ39PyA4LZdkYH1ps6MHxWU42rPPXdbL2Iwp9qU8fZb3cfkE/pGgAiin4skDHH9yTT4ODD5rPbPjyMAArTcsT2/jzbPmH8BHeJGH6Ls48fbNPJ5c/fltzXEbMw0riJYWE/eqneY1VCfsNhne4+Rh7w4eThfxWQbNZBu7A+SvRyLf7Y1tOm7CTD3JWO7wW/isdiOzGLb/6s38JB+G9dHbMkZVPZByabByt96N7e9jh9FXXY2y9VXxezoZP2kTHdcovzGqxvGOSISugY7sTC7WJ7ozyPtN/H4rWNq9msRAC4tzsH2magd43hY3GwYQpqRJliEE5SCRQRFJIhOqIZd6hU8+9QFWBBG1CEQQTxq3GqkStRqUWQmcE7Aslhtm3q810H1Kkm1Y6GFzjTWlx5AK07Z5b77mt6XZ8greI2gIxkYAB0WIlxBO8rLRsbw0de/8AAIDMoS5K1ZEESoa1UqAjVB3LsDCH7Pgc3e1uXxa4j6Kfa+zbF5b+8K39Vh/Q3tAOw8kB3xyZh/DJqP6g5dAlgBWNjPG6co2hsirLLP7vHwO9a/j4i1rnONAc+fAAc12yXZ7HaOaD14jxXFe2GJbNiXNabiY4sadxcR7zvE3XQDmtOeOno+jxy5s/bFTYGIuRpc05B72U6/Hf5hdq2C2ORrXRODmcCOm8EcCORXH8Dgw3UE1QrxWy9jtpTYfEGRjS6I0JGcCN2ccnDgf0MeO9vW+I/C8eLgmUusvt93Y42qp2hw3rMO+P7wr6q7g52SMEjCHNO4/MHkeifEtuh1+n5roj5auFwuquVA14LJRO0WMcKNctPLRTREhb2K+51aoHOVJ0b3v9ojI2iGje53N/QcvFWHOVEjJuCtRvWKc+lZgltBf9YE5mpVXKrPNl37kGI7VbKjkh9dG0B7S4HKKzAHUGt5WiLosc1wjWwXuPmVou1sN6uVzRuux3HUfrotXJPqsVQnKYJ1rEZTpEJIIp96gKsYjeq5WUDBGEAUgQSxLKYDBPk90aCrJPM14rFsWwbAxIzerJoOGW+R5qybF3B4ZrN2/mVBtHHUKBUeKxJaXA77P5rETSEm1QnPtNaFOVArRAoAic21QaSFgPO0QQbr6Jsbkx2QnSWNzf8zaePg13mu43ovNfZvGepxUEv3ZWE9xNH4Er0kLrSr+CxrKMVt6Z5b6iH9o8au4Rx7i4nhe4LS+03Z7DYXCPe5pdIaYw3RMh4hvIAE0uhYfDBt8XE253M/gOAXPPSbi82Ijiv2Y47r9+Q0PgB5rTyXU29T4VxXm9RjhOpO7/AIa7gIRbI3HV2UbtOgXWtj7FjhjaABmoEniSuQ3crTycPCl2ns5ifXQMcSMwGV1cxx8d6x4vL2fxHx5zHDKXr6r+Cw+W3NAF6kcHHn39Vac6wCiaE2I90rofI3y4ZjxUsg5SPHk8hMDoj2uKxMw/xpP9xyaNb4xbHgOy3r4Ip4HEOc26cdHU4jfw3LD4ljmuyOq2kg7jqOoU2zNv4iA1HIK09iS3R0DwF2079QepBVfGSOdIXEAZnOdobGtmvisMfd9WV1rpBK1V8O8tKuOCqTM4rNiyTZbCxe1p6ae5Twv0WC7Qy6VxJoeKImw76iYOl+JWN7TYK2CcHdTHDpwP0V7LZaOACfbkLjh3hvABx7g5Y5dxWmhOhCdaFMmSSQDid6rFWsSqrllAIRhAjagmiVqGSnA9VUh3qUlWC5tKfM6+Yvx/VKoge7citUSWkUkyBwiCYJwgIIgmanQIL0l2axvrsLDLxfEwnvyjN8bXm0ruHonxmfAtbesb3s8Lzj/UpVjdAuL9rcSZcfLyEpb/ACAM+i7Pa4W5+aZ7/vPc7zcSubm+kfTfhvj3ycmX2kn+7v8Aoidb6rofo62rT/Vk6PFf5hqPqFzwcVk+zuMMcrSOBsd41WEurt9P8R9NOf0+WP7O7MXKtr9usVDiXQOicZMx9nXIG2QD1G7culRz2wObuNEdxFrEbf2BDiQM7acNWvB1ab0I5ros2/Nf02yuY7XikMsk5ikZHJI9zHPjc0EOc4iiRR01UULxShZjsUHSB00jQJHNDWySDLkeQA23ew3ThRNCzWisSSvdRe97yBVve57qu6txtb8fd9Wu6FbDvQhozCiDv3KEnojhIvwWaLSryhW2Dgop4TSCmNFr23H/AN4zob8gtglC17ajmiVrnH3WuPyUqLbMQGNzO00tWtky+tDiRo85QOlfmtXc98pDzdONMH3uFrdsHhREGMO8Ms9/H5pO1c9x2HMcj4z9lxHhwUNrOdtYaxGYfbY13juP0WBWizVU6SFOoCxIVNyuYlVCsoARhAjColi3orru+SaEI0AkWkwoCK3eX4JwdQRuVRZTpgiRSCRSSpAQUgUbEbUCK6d6F8ZrPD/BIPi0/wDFcyIW3+ijFZMext/tGPZ41nH+hKR2rHyZY3Hk0nyBXEcLwXaNuH+5f/8AN5/pK45hWLl5fMfZfhmfJy3+P7C7epMG+ntrmglOqUejgtb6mzeLs3ZXE58Kz922/wApIHwpZadu4rVPRxiLZIw8HB1fxCv+K2zEXpyXThflj8z+I8X5fqs8f3/724n2hOTGYhvD1zz/ADHN9VHFigi7Z/8A78T/ABj/AG2LCCSl0Tw89sAaCha2idOSo4TF81O7EDN4D6qi42WkEu0mjeFSfiVRxMqot4jGNdu+K13aUPrZo2k+yA4uPQVop3ya71j9qAmSMXTSHF2vAVdrG0bFh8dDGA9rM7gMkYGvf3d6s4SV7s8knvEVXLotYwuMdmyxN/dbp5lbVh4aaA43XtOPM8AsojCdtYifVu4NaGnvOoWrLoE8TZQ9jzQfVdDwIWjY3Cuie6N4pzTX5has53tkgSSSWAkxSpFOkkAFE1OkshNDuRP0NpJKwNm5qNzaTJIi20o0kkU9JEJ0kDNUgTJICKyPZjF+qxcEn3ZWeRcA74EpJIPQe1m3DKf8KQf0lchaKCSS5eXy+x/Df/nyfzP7QEoRvSSWt9XG7ej3FEYgt4OjPm0gj4WukSOsDv8AonSXRx+HwHx/GT1fX1kcP7bf+QxP8bf9qNYGRJJdE8PBpo5FajcTZSSWQWZQyOB3FOkgpSxcj+u9VMTGS+MCtz9Oe5JJQZnZ+HETczhTj403p1KybZwW3uHJJJZRFLCQeukBsgA6Kl6QWtEsdb8mUnnW75pJLHLwrVUkklpV/9k=">
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-circle" style="width: 150px;height: 150" src="http://static2.politico.com/dims4/default/035efea/2147483647/resize/1160x%3E/quality/90/?url=http%3A%2F%2Fstatic.politico.com%2Fa2%2F01%2F4fa959254c2f9216910f47649004%2F160114-donald-trump-2-ap-1160.jpg">
+
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-circle" style="width: 150px;height: 150" src="http://www.rawstory.com/wp-content/uploads/2016/02/Donald-Trump-Iowa-REUTERS-800x430.png">                
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="img-circle" style="width: 150px;height: 150" src="http://images.techhive.com/images/article/2015/11/111915blog-donald-trump-100629006-primary.idge.jpg">                
+
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-circle" style="width: 150px;height: 150" src="http://dailysignal.com/wp-content/uploads/150227_DonaldTrump.jpg">                
+
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-circle" style="width: 150px;height: 150" src="http://www.robertreeveslaw.com/wp-content/uploads/2015/11/Donald-Trump-Choking.jpg">                
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="img-circle" style="width: 150px;height: 150" src="http://www.robertreeveslaw.com/wp-content/uploads/2015/11/Donald-Trump-Choking.jpg">                
+
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-circle" style="width: 150px;height: 150" src="http://www.epictimes.com/wp-content/uploads/2016/03/trump-crazy-800x445.png">                
+
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-circle" style="width: 150px;height: 150" src="http://a57.foxnews.com/images.foxnews.com/content/fox-news/opinion/2016/02/05/yes-donald-trump-made-mistakes-in-iowa-but-can-still-win-big/_jcr_content/par/featured-media/media-0.img.jpg/876/493/1454652563791.jpg?ve=1&tl=1">                
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
