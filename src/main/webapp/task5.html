@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script src="js/task4.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div id="container" class="well well-lg col-xs-3">
+            <label for="firstname">First Name</label> <input id="firstname" class="form-control">
+            <label for="lastname">Last Name</label> <input id="lastname" class="form-control">
+            <br><button id="b2" class="btn btn-primary">Register</button>
+            <div id="text"></div>
+        </div>
+
+        <script>
+            $(function () {
+                $("#b2").attr("disabled", "disabled");
+
+
+
+                $('#firstname').on('input', function () {
+                    var input1 = $('#lastname');
+                    var input = $(this);
+                    var is_fname = input.val();
+                    var is_lname = input1.val();
+                    if (!is_lname) {
+                        $("#lastname").val("Fill this");
+                    }
+                    $("#text").text(input1);
+                    if (is_fname && is_lname) {
+                        document.getElementById("b2").disabled = false;
+                    } else {
+                        $("#b2").attr("disabled", "disabled");
+                    }
+                });
+                
+                $('#lastname').on('input', function () {
+                    var input1 = $('#firstname');
+                    var input = $(this);
+                    var is_fname = input.val();
+                    var is_lname = input1.val();
+                    if (!is_lname) {
+                        $("#firstname").val("Fill this");
+                    }
+                    $("#text").text(input1);
+                    if (is_fname && is_lname) {
+                        document.getElementById("b2").disabled = false;
+                    } else {
+                        $("#b2").attr("disabled", "disabled");
+                    }
+                });
+
+            });
+
+
+
+
+        </script>
+
+    </body>
+</html>

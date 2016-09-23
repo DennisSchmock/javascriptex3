@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    </head>
+    <body>
+        <div id="container" class="container"></div>
+        <script>
+            $(function () {
+
+
+
+                var persons = ["Dennis", "Hans", "Lars", "Morten", "Hop hop"];
+                $("#container").append("<table class='table table-striped'>");
+                $("#container").append("<thead><tr><th>Navn</th></tr>");
+                for (var i = 1; i < persons.length; i++) {
+                    $("#container").append("<tr><td id='cell" + i + "'>" + persons[i] + "</td></tr>");
+                    $("#cell" + i).mouseover(function () {
+                        $(this).css("font-style", "italic");
+                        $(this).css("font-weight", "bold");
+
+
+                    });
+                    $("#cell" + i).mouseout(function () {
+
+                        $(this).css("font-style", "normal");
+                        $(this).css("font-weight", "normal");
+
+                    });
+
+                }
+                $("#container").append("</table>");
+
+            });
+
+        </script>
+    </body>
+</html>
